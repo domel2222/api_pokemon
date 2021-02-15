@@ -49,7 +49,7 @@ class PokemonTCGCatalog {
 
     async pullCards() {
         this.toogleShowElement(this.loader, this.button);
-        // const {cards} = await this.fetchData(`${this.API_ENDPOINT}`);
+        // const {cards} = await this.fetchData(`${this.API_ENDPOINT}`); my
         const {cards} = await this.fetchData(`${this.API_ENDPOINT}?page=${this.currentPage}&pageSize=${this.pageSize}`);
 
         this.toogleShowElement(this.loader, this.button);
@@ -117,10 +117,6 @@ class PokemonTCGCatalog {
             document.getElementById(id).classList.add('hide'))
     }
 }
-
-
-
-
 
 
 const catalog = new PokemonTCGCatalog();
